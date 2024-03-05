@@ -1,9 +1,9 @@
 
 import { IoBarChartSharp } from 'react-icons/io5';
-import { MdQueryStats } from 'react-icons/md';
-import { FaWpforms, FaUsers, FaQuora } from 'react-icons/fa';
+import { FaUsers, FaQuora } from 'react-icons/fa';
 import { ImProfile } from 'react-icons/im';
-import { MdAdminPanelSettings } from 'react-icons/md';
+import { MdContactMail } from "react-icons/md";
+
 
 const links = [
   {/*
@@ -37,6 +37,11 @@ const links = [
     text: 'faq',
     path: 'faq',
     icon: <FaQuora />,
+  },
+  {
+    text: 'contact',
+    path: 'contact',
+    icon: <MdContactMail />,
   },
   {
     text: 'profile',

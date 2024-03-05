@@ -1,7 +1,7 @@
 /* eslint-disable react-refresh/only-export-components */
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import { HomeLayout, Landing, Register, Login, DashboardLayout, Error, AddJob, Stats, AllJobs, Profile, Admin, EditJob, } from './pages';
+import { HomeLayout, Landing, Register, Login, DashboardLayout, Error, AddJob, Stats, AllJobs, Profile, Admin, EditJob, Teams, Faq, Contact, } from './pages';
 
 import { action as registerAction } from './pages/Register';
 import { action as loginAction } from './pages/Login';
@@ -72,6 +72,18 @@ const router = createBrowserRouter([
             path: 'add-job',
             element: <AddJob />,
             action: addJobAction(queryClient),
+          },
+          {
+            path: 'teams',
+            element: <Teams />,
+          },
+          {
+            path: 'faq',
+            element: <Faq />,
+          },
+          {
+            path: 'contact',
+            element: <Contact />,
           },
           {
             path: 'all-jobs',
