@@ -13,3 +13,4 @@ export { default as ChartsContainer } from './ChartsContainer';
 export { default as StatsContainer } from './StatsContainer';
 export { default as Loading } from './Loading';
 export { default as Modal } from './Modal';
+export { default as PointOfContact } from './PointOfContact';

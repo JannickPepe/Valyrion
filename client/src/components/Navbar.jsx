@@ -13,12 +13,12 @@ const Navbar = () => {
 
   return (
     <Wrapper>
-      <div className='nav-center'>
+      <div className='nav-center z-50'>
         <button type='button' className='toggle-btn' onClick={toggleSidebar}>
           <FaAlignLeft />
         </button>
 
-        <div>
+        <div className='z-50'>
           <Logo />
           <h4 className='logo-text'>Dashboard</h4>
         </div>
