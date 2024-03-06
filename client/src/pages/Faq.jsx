@@ -25,8 +25,8 @@ const Faq = () => {
                             FAQ
                             <FaQuestionCircle size={24} className="ml-2 text-indigo-500" />
                         </h2>
-                        <p className="text-neutral-500 text-xl mt-3 max-w-[700px]">
-                            Do you have a question about ViaAds? Dont worry we will provide you with the most frequently 
+                        <p className="text-neutral-500 text-xl mt-3 max-w-[800px]">
+                            Do you have a question about ViaAds?<br/> Dont worry we will provide you with the most frequently 
                             asked questions and advertising rescources.
                         </p>
                         <button type="button" onClick={handleOpen} className="my-4 text-indigo-500 hover:text-indigo-400 font-bold hover:scale-105 relative w-fit 
@@ -58,12 +58,12 @@ const Faq = () => {
                             </div>
                         </Modal>
                     </div>
-                    <div className="lg:ml-16 max-w-[700px] mb-4 items-start grid divide-y divide-neutral-200 bg-slate-600 px-4 rounded-lg">
+                    <div className="lg:ml-12 max-w-[800px] mb-4 items-start grid divide-y divide-neutral-200 bg-slate-600 px-4 rounded-lg">
                         
                         <div className="py-5">
                             <details className="group">
                                 <summary className="flex justify-between items-center font-medium cursor-pointer list-none text-slate-100">
-                                    <span className="text-lg"> What is a SAAS platform?</span>
+                                    <span className="text-lg">What is ViaAds?</span>
                                     <span className="transition group-open:rotate-180">
                                         <IoIosArrowDown size={22} className="mx-2" />
                                     </span>
@@ -88,7 +88,7 @@ const Faq = () => {
                         <div className="py-5">
                             <details className="group">
                                 <summary className="flex justify-between items-center font-medium cursor-pointer list-none text-slate-100">
-                                    <span className="text-lg"> What is a SAAS platform?</span>
+                                    <span className="text-lg">How Does ViaAds Work?</span>
                                     <span className="transition group-open:rotate-180">
                                         <IoIosArrowDown size={22} className="mx-2" />
                                     </span>
@@ -113,7 +113,7 @@ const Faq = () => {
                         <div className="py-5">
                             <details className="group">
                                 <summary className="flex justify-between items-center font-medium cursor-pointer list-none text-slate-100">
-                                    <span className="text-lg"> What is a SAAS platform?</span>
+                                    <span className="text-lg">What are the different types of advertising availible on ViaAds?</span>
                                     <span className="transition group-open:rotate-180">
                                         <IoIosArrowDown size={22} className="mx-2" />
                                     </span>
@@ -138,7 +138,7 @@ const Faq = () => {
                         <div className="py-5">
                             <details className="group">
                                 <summary className="flex justify-between items-center font-medium cursor-pointer list-none text-slate-100">
-                                    <span className="text-lg"> What is a SAAS platform?</span>
+                                    <span className="text-lg">How can I increase my ViaAds exposure?</span>
                                     <span className="transition group-open:rotate-180">
                                         <IoIosArrowDown size={22} className="mx-2" />
                                     </span>
@@ -163,7 +163,7 @@ const Faq = () => {
                         <div className="py-5">
                             <details className="group">
                                 <summary className="flex justify-between items-center font-medium cursor-pointer list-none text-slate-100">
-                                    <span className="text-lg"> What is a SAAS platform?</span>
+                                    <span className="text-lg">How does ViaAds attribution works?</span>
                                     <span className="transition group-open:rotate-180">
                                         <IoIosArrowDown size={22} className="mx-2" />
                                     </span>
@@ -188,7 +188,7 @@ const Faq = () => {
                         <div className="py-5">
                             <details className="group">
                                 <summary className="flex justify-between items-center font-medium cursor-pointer list-none text-slate-100">
-                                    <span className="text-lg"> What is a SAAS platform?</span>
+                                    <span className="text-lg">Where can I find ViaAds billing information?</span>
                                     <span className="transition group-open:rotate-180">
                                         <IoIosArrowDown size={22} className="mx-2" />
                                     </span>
