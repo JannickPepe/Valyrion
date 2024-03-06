@@ -82,7 +82,7 @@ const router = createBrowserRouter([
             element: <Faq />,
           },
           {
-            path: 'contact',
+            path: 'support',
             element: <Contact />,
           },
           {

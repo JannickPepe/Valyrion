@@ -9,7 +9,7 @@ import ThemeToggle from './ThemeToggle';
 
 const Navbar = () => {
 
-  const { toggleSidebar, user } = useDashboardContext();
+  const { toggleSidebar, } = useDashboardContext();
 
   return (
     <Wrapper>
@@ -20,7 +20,7 @@ const Navbar = () => {
 
         <div>
           <Logo />
-          <h4 className='logo-text'>Dashboard: {user?.name} {user?.lastName} </h4>
+          <h4 className='logo-text'>Dashboard</h4>
         </div>
         <div className='btn-container'>
           <ThemeToggle />

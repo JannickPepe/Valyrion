@@ -39,8 +39,8 @@ const links = [
     icon: <FaQuora />,
   },
   {
-    text: 'contact',
-    path: 'contact',
+    text: 'support',
+    path: 'support',
     icon: <MdContactMail />,
   },
   {
