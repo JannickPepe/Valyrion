@@ -1,4 +1,4 @@
-import { RiMailSendLine } from "react-icons/ri";
+import { RiMailSendLine, RiSendPlaneLine } from "react-icons/ri";
 
 
 const Contact = () => {
@@ -105,9 +105,9 @@ const Contact = () => {
                             </textarea>
                         </label>
                         <div className="mb-4">
-                            <button type="submit" className="h-10 px-5 text-indigo-100 bg-indigo-700 rounded-lg transition-colors duration-150 focus:shadow-outline hover:bg-indigo-800"
+                            <button type="submit" className="text-base font-semibold hover:text-white hover:scale-110 h-10 px-5 text-slate-900 bg-gradient-to-r from-[#75ebeb] to-[#53c9d4] rounded-lg transition-colors duration-150 focus:shadow-outline"
                             >
-                            Contact Us
+                            Contact <RiSendPlaneLine className="inline-block" size={16}/>
                             </button>
                         </div>
                     </form>

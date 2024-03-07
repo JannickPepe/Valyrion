@@ -13,7 +13,7 @@ const Navbar = () => {
 
   return (
     <Wrapper>
-      <div className='nav-center z-50'>
+      <div className='nav-center'>
         <button type='button' className='toggle-btn' onClick={toggleSidebar}>
           <FaAlignLeft />
         </button>

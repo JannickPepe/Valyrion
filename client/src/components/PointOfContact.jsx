@@ -1,55 +1,71 @@
-import React from 'react'
-import { IoCallOutline } from "react-icons/io5";
-import Modal from "../components/Modal";
-import { FaUserCircle } from "react-icons/fa";
-import { MdOutlineKeyboardArrowRight } from "react-icons/md";
+/* eslint-disable react/prop-types */
+import { AnimatePresence, motion } from "framer-motion";
+import { FiAlertCircle } from "react-icons/fi";
+import { useState } from "react";
+import { MdPhoneIphone } from "react-icons/md";
 import { IoMailOutline } from "react-icons/io5";
+import { BsArrowRight } from "react-icons/bs";
+
 
 const PointOfContact = () => {
 
-    const [open, setOpen] = React.useState(false);
-    const handleClose = () => {
-        setOpen(false);
-    };
-    const handleOpen = () => {
-        setOpen(true);
-    };
-
+    const [isOpen, setIsOpen] = useState(false);
+    
     return (
-        <div>
-            <button type="button" onClick={handleOpen} className=" mt-3 text-indigo-500 hover:text-indigo-400 font-bold hover:scale-105 relative w-fit 
-                block after:block after:content-[''] after:absolute after:h-[3px] after:bg-indigo-600 after:w-full after:scale-x-0 
-                after:hover:scale-x-100 after:transition after:duration-300 after:origin-center"
-            >
-                <p>Point Of Contact<MdOutlineKeyboardArrowRight size={22} className="inline-block" /></p> 
+        <div className="mt-2.5">
+            <button  onClick={() => setIsOpen(true)} className="group text-base font-bold text-center transition-all duration-300 ease-in-out">
+                <span className='bg-left-bottom bg-gradient-to-r from-[#2cb1bc] to-[#0a6c74] bg-[length:0%_4px] bg-no-repeat group-hover:bg-[length:100%_4px] transition-all duration-500 ease-out'> 
+                    Point of Contact <BsArrowRight size={16} className="group-hover:translate-x-1 transition inline-block" />
+                </span> 
             </button>
-            <Modal isOpen={open} onClose={handleClose}>
-                <div className="modal-faq bg-slate-700 shadow-lg max-w-[600px] rounded p-2 lg:p-6 mb-4 flex">
-                    <div className="flex-shrink-0">
-                        <img src="https://steamuserimages-a.akamaihd.net/ugc/938339513171723292/84874C0CBCEA963A99EA9656FF85C5AF0719E420/" alt="Map 1" className="w-32 h-32 object-cover rounded-full" />
-                    </div>
-                    <div className="ml-4 flex flex-col justify-between">
-                        <div className="flex items-center">
-                            <div className="flex items-center justify-center mr-2">
-                                <FaUserCircle color="white" size={24}/>
-                            </div>
-                            <h2 className="text-base lg:text-2xl font-semibold text-white">Jannick Pedersen</h2>
-                        </div>
-                        <div className="flex">
-                            <div className="text-base lg:text-xl mr-4 text-white">
-                                <IoCallOutline className="inline-block mr-2" size={24} />
-                                <p className="inline-block">(+45)12336655</p>
-                                <hr className="my-2" />
-                                <IoMailOutline className="inline-block mr-2" size={24} />
-                                <p className="inline-block underline decoration-solid text-sky-400">jannickhello@live.dk</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </Modal>
+            <SpringModal isOpen={isOpen} setIsOpen={setIsOpen} />
         </div>
+        
     );
+};
 
+const SpringModal = ({ isOpen, setIsOpen }) => {
+    return (
+        <AnimatePresence>
+        {isOpen && (
+            <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            onClick={() => setIsOpen(false)}
+            className="bg-slate-900/20 backdrop-blur p-8 fixed inset-0 z-50 grid place-items-center overflow-y-scroll cursor-pointer"
+            >
+                <motion.div
+                    initial={{ scale: 0, rotate: "12.5deg" }}
+                    animate={{ scale: 1, rotate: "0deg" }}
+                    exit={{ scale: 0, rotate: "0deg" }}
+                    onClick={(e) => e.stopPropagation()}
+                    className="bg-gradient-to-br from-[#5eb7bf] to-[#0a6c74] text-white p-6 rounded-lg w-full max-w-lg shadow-xl cursor-default relative overflow-hidden"
+                >
+                    <FiAlertCircle className="text-white/10 rotate-12 text-[250px] absolute z-0 -top-24 -left-24" />
+                    <div className="relative z-10">
+                        <div className=" p-4 rounded-lg max-w-full" onClick={() => setIsOpen(false)}>
+                            <div className="mx-auto">
+                                <div className="card md:flex max-w-lg">
+                                    <div className="w-20 h-20 mx-auto mb-6 md:mr-6 flex-shrink-0">
+                                        <img className="object-cover rounded-full" src="https://tailwindflex.com/public/images/user.png" />
+                                    </div>
+                                    <div className="flex-grow text-center md:text-left">
+                                        <p className="font-bold text-slate-800">Point Of Contact.</p>
+                                        <h3 className="text-xl heading text-slate-900">Jannick Pedersen.</h3>
+                                        <p className="mt-2 mb-3">Reach out for any questions.</p>
+                                        <hr />
+                                        <div className="flex gap-1 my-2 text-slate-900 font-bold"><MdPhoneIphone size={22} color="black"/>(+45)45668455</div>
+                                        <div className="flex gap-1 text-slate-900 font-bold underline"><IoMailOutline size={22} color="black"/>JohnDoe@live.dk</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </motion.div>
+            </motion.div>
+        )}</AnimatePresence>
+    );
 };
 
 export default PointOfContact;
