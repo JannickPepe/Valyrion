@@ -1,7 +1,6 @@
 
 import { IoBarChartSharp } from 'react-icons/io5';
 import { FaUsers, FaQuora } from 'react-icons/fa';
-import { ImProfile } from 'react-icons/im';
 import { MdContactMail } from "react-icons/md";
 
 
@@ -17,10 +16,15 @@ const links = [
     path: 'all-jobs',
     icon: <MdQueryStats />,
   },
-    {
+  {
     text: 'admin',
     path: 'admin',
     icon: <MdAdminPanelSettings />,
+  },
+  {
+    text: 'profile',
+    path: 'profile',
+    icon: <ImProfile />,
   },
  */},
   {
@@ -42,11 +46,6 @@ const links = [
     text: 'support',
     path: 'support',
     icon: <MdContactMail />,
-  },
-  {
-    text: 'profile',
-    path: 'profile',
-    icon: <ImProfile />,
   },
 ];
 

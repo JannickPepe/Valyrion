@@ -75,13 +75,13 @@ const Contact = () => {
                     </h2>
                     <p className="py-2 text-center text-sm">
                         Complex components may need some cooking and the JavaScript needed to make
-                    them awesome is included. So dont worry, you will get it all !
+                        them awesome is included. So dont worry, you will get it all !
                     </p>
                 </div>
             </div>
 
             <div className="max-w-[600px] md:px-16">
-                <h4 className="inline-block flex"><RiMailSendLine className="mr-2 inline-block" size={30}/>Support</h4>
+                <h4 className="inline-block flex items-center text-3xl"><RiMailSendLine className="mr-2 inline-block" size={30}/>Support</h4>
                 <p className="py-4 text-sm">We will reply fast as possible!</p>
                 <div className="p-6 border border-[#2cb1bc] sm:rounded-md">
                     <form method="POST" action="https://herotofu.com/start">

@@ -4,6 +4,8 @@ import shapethree from "../assets/images/shape/shape-3.svg";
 import shapefour from "../assets/images/shape/shape-4.svg";
 import shapeheader from "../assets/images/shape/header-image.svg";
 import { Link } from "react-router-dom";
+import { IoStatsChartSharp } from "react-icons/io5";
+
 
 const LandingNew = () => {
 
@@ -39,7 +41,7 @@ const LandingNew = () => {
                     <div className="row">
                         <div className="w-full lg:w-1/2 mt-4 lg:-mt-24">
                             <div className="header_hero_content">
-                                <h5 className="hero_title font-bold text-xl px-2 underline">Valyrion</h5>
+                                <h5 className="hero_title font-bold text-xl px-2 underline flex items-center"><IoStatsChartSharp size={24} className="mr-1"/>Valyrion</h5>
                                 <h2 className="hero_title text-2xl sm:text-4xl md:text-5xl lg:text-4xl xl:text-5xl font-extrabold">
                                 <span className="text-theme-color">Creative</span> Multipurpose Statictics <span className="text-theme-color">
                                     Templates</span>
