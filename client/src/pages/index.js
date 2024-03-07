@@ -16,3 +16,4 @@ export { default as Admin } from './Admin';
 export { default as Faq } from './Faq';
 export { default as Teams } from './Teams';
 export { default as Contact } from './Contact';
+export { default as LandingNew } from './LandingNew';

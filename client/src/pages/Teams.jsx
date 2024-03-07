@@ -42,8 +42,8 @@ const Teams= () => {
             <h5 className="text-slate-500 text-lg font-medium pb-4">Manage your team members and permission here</h5>
             <div className="md:flex gap-4 lg:gap-8">
                 <button 
-                    className="max-w-[200px] group flex h-min ring-none items-center justify-center hover:opacity-95 disabled:opacity-50  rounded-lg py-2 px-4 font-dm focus:outline-none !ring-transparent text-indigo-800 
-                    border border-[#2cb1bc] border-b-[#2cb1bc] border-b-4 hover:border active:border bg-white hover:text-violet-900 hover:bg-gray-50  active:bg-gray-100 active:text-slate-800 focus-visible:outline-violet-600 focus-visible:ring-violet-700 text-sm sm:text-base"
+                    className="max-w-[200px] group flex h-min ring-none items-center justify-center hover:opacity-95 disabled:opacity-50  rounded-lg py-2 px-4 font-dm focus:outline-none !ring-transparent text-slate-800
+                    border border-[#2cb1bc] border-b-[#2cb1bc] border-b-4 hover:border active:border bg-white hover:text-[#2cb1bc] hover:bg-gray-50  active:bg-gray-100 active:text-slate-800 focus-visible:outline-violet-600 focus-visible:ring-violet-700 text-sm sm:text-base"
                     href="">
                     <IoAddOutline size={20} />
                     <span className="ml-2">Add team member</span>

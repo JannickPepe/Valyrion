@@ -1,7 +1,7 @@
 {
-  "name": "jannickmern",
+  "name": "Valyrion",
   "version": "1.0.0",
-  "description": "Personal MERN",
+  "description": "Admin Dashboard prototype for Valyrion",
   "main": "index.js",
   "type": "module",
   "scripts": {

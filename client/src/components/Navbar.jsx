@@ -20,7 +20,7 @@ const Navbar = () => {
 
         <div className='z-50'>
           <Logo />
-          <h4 className='logo-text'>Dashboard</h4>
+          <h4 className='logo-text'>Partner Portal Dashboard</h4>
         </div>
         <div className='btn-container'>
           <ThemeToggle />
