@@ -52,10 +52,10 @@ app.use(
     helmet({
         contentSecurityPolicy: {
             directives: {
-                "media-src": ["'self'", "data:"],
-                "default-src": ["'self'", "data:"],
+                "media-src": ["'self'", "https://res.cloudinary.com/", "https://tailwindflex.com/public/images/user.png", "https://bit.ly/3vaOTe1  https://bit.ly/3vaOTe1",  "data:"],
+                "default-src": ["'self'", "https://res.cloudinary.com/", "https://tailwindflex.com/public/images/user.png", "https://bit.ly/3vaOTe1  https://bit.ly/3vaOTe1", "data:"],
                 "script-src": ["'self'", "'unsafe-eval'", "'unsafe-inline'", "data:"],
-                "img-src": ["'self'", "'unsafe-inline'", "https://res.cloudinary.com/", "data:"],
+                "img-src": ["'self'", "'unsafe-inline'", "https://res.cloudinary.com/", "https://tailwindflex.com/public/images/user.png", "https://bit.ly/3vaOTe1  https://bit.ly/3vaOTe1", "data:"],
                 "font-src": ["'self'", "'unsafe-inline'", "https://pro.fontawesome.com/", "https://fonts.gstatic.com/"],
                 "connect-src": ["'self'", ],
                 "frame-src": ["'self'", "https://youtube.com", "https://www.youtube.com"]
