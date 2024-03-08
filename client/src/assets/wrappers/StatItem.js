@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const Wrapper = styled.article`
-  padding: 2rem;
+  padding: 1rem;
   background: var(--background-secondary-color);
   border-bottom: 5px solid ${(props) => props.color};
   border-radius: var(--border-radius);
@@ -14,7 +14,7 @@ const Wrapper = styled.article`
   .count {
     display: block;
     font-weight: 700;
-    font-size: 50px;
+    font-size: 30px;
     color: ${(props) => props.color};
     line-height: 2;
   }
@@ -27,8 +27,8 @@ const Wrapper = styled.article`
     font-size: 1.25rem;
   }
   .icon {
-    width: 70px;
-    height: 60px;
+    width: 50px;
+    height: 40px;
     background: ${(props) => props.bcg};
     border-radius: var(--border-radius);
     display: flex;
