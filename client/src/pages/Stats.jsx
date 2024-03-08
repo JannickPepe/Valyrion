@@ -1,5 +1,7 @@
 /* eslint-disable react-refresh/only-export-components */
-import { ChartsContainer, StatsContainer } from '../components';
+import { ChartsContainer, OrderTable, StatsContainer } from '../components';
+import MonthlyBox from '../components/Stats/MonthlyBox';
+import YTDBox from '../components/Stats/YTDBox';
 import customFetch from '../utils/customFetch';
 import { useQuery } from '@tanstack/react-query';
 
@@ -25,10 +27,23 @@ const Stats = () => {
 
     return (
         <>
-        <StatsContainer defaultStats={defaultStats} />
-        {monthlyApplications?.length > 1 && (
-            <ChartsContainer data={monthlyApplications} />
-        )}
+            <StatsContainer defaultStats={defaultStats} />
+            
+            <div className='grid grid-cols-2'>
+                <div className='col-span-1'>
+                    <YTDBox />
+                </div>
+                <div className='col-span-1'>
+                    <MonthlyBox />
+                </div>
+            </div>
+
+
+            {monthlyApplications?.length > 1 && (
+                <ChartsContainer data={monthlyApplications} />
+            )}
+
+            <OrderTable />
         </>
     );
 
