@@ -1,19 +1,20 @@
-import { RiMailSendLine, RiSendPlaneLine } from "react-icons/ri";
+import { RiArrowRightLine, RiMailSendLine, RiSendPlaneLine } from "react-icons/ri";
 
 
 const Contact = () => {
 
     return (
         <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8 ">
-            <h3 className="my-2">Support and Services</h3>
+            <h3 className="my-2">Support & Services</h3>
         <div className="flex items-stretch justify-center">
             <div className="grid md:grid-cols-2">
                 <div className="h-full pr-6">
                     <p className="mt-3 mb-12 text-lg text-gray-600 dark:text-slate-400">
                         Have any questions or need help regarding some issues?
                         Dont worry, we will provide you will the help fast as possible!
+                        <hr className="mt-4"/> 
                     </p>
-                    <ul className="mb-6 md:mb-0">
+                    <ul className="mb-6 md:mb-0 -mt-2">
                         <li className="flex">
                             <div className="flex h-10 w-10 items-center justify-center rounded bg-[#2cb1bc] text-gray-50">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -61,7 +62,7 @@ const Contact = () => {
                                     <path d="M12 7v5l3 3"></path>
                                 </svg>
                             </div>
-                            <div className="ml-4 mb-4">
+                            <div className="ml-4 mb-2">
                                 <h3 className="mb-2 text-lg font-medium leading-6 text-[#14919b]">Working
                                     hours</h3>
                                 <p className="text-gray-600 dark:text-slate-400">Monday - Friday: 08:00 - 17:00</p>
@@ -69,6 +70,11 @@ const Contact = () => {
                             </div>
                         </li>
                     </ul>
+                    <div>
+                        <p className="md:mt-6 mb-2 lg:mb-0 underline flex text-gray-500 hover:cursor-pointer hover:text-[#14919b] hover:ml-1 transition delay-100">
+                            Terms of Use<RiArrowRightLine size={18} className="ml-1" />
+                        </p>
+                    </div>
                 </div>
                 <div className="card h-fit max-w-6xl p-5 md:p-3" id="form">
                     <h2 className="mb-4 text-2xl font-semibold flex items-center"> 
@@ -89,7 +95,9 @@ const Contact = () => {
                             </div>
                         </div>
                         <div className="text-center">
-                            <button type="submit" className="w-full bg-[#2cb1bc] px-6 py-3 font-xl rounded-md sm:mb-0 hover:text-[#0a6c74]">Send Message</button>
+                            <button type="submit" className="w-full flex items-center justify-center bg-[#2cb1bc] px-6 py-3 font-xl rounded-md sm:mb-0 hover:text-[#0a6c74]">
+                                Send Message<RiSendPlaneLine className="ml-1" size={20} />
+                            </button>
                         </div>
                     </form>
                 </div>

@@ -2,6 +2,7 @@ import { FaUserCircle, FaCaretDown } from 'react-icons/fa';
 import Wrapper from '../assets/wrappers/LogoutContainer';
 import { useState } from 'react';
 import { useDashboardContext } from '../pages/DashboardLayout';
+import NavLinks from './NavLinksLogout';
 
 const LogoutContainer = () => {
   const [showLogout, setShowLogout] = useState(false);
@@ -24,6 +25,8 @@ const LogoutContainer = () => {
         <FaCaretDown />
       </button>
       <div className={showLogout ? 'dropdown show-dropdown' : 'dropdown'}>
+        <NavLinks />
+        <hr className='mt-2 border-slate-700'/>
         <button type='button' className='dropdown-btn' onClick={logoutUser}>
           logout
         </button>
