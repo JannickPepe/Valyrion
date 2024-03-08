@@ -4,117 +4,98 @@ import { RiMailSendLine, RiSendPlaneLine } from "react-icons/ri";
 const Contact = () => {
 
     return (
-        <div>
-            <h3 className="px-8 md:px-16">Support and Services</h3>
-            <div className="grid grid-cols-4 gap-8 p-8 md:p-16 mt-6 md:mt-2">
-                <div className="col-span-4 sm:col-span-2 lg:col-span-1 relative px-5 pt-10 pb-2 flex flex-col justify-start items-center border-2 border-[#2cb1bc] rounded-xl ">
-                    <span className="absolute -top-6 p-3 border-2 border-[#2cb1bc] rounded-full bg-[#2cb1bc]">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
-                        aria-hidden="true" className="w-7 h-7 text-yellow-640">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
-                            d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01">
-                            </path>
-                        </svg>
-                    </span>
-                    <h2 className="my-1 gradient-red text-lg uppercase tracking-wide">
-                        Instructions
-                    </h2>
-                    <p className="py-2 text-center text-sm">
-                        Some of the components require fews modifications in your Tailwind config or
-                        CSS file. I obviously give you these instructions alongside the code.
+        <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8 ">
+            <h3 className="my-2">Support and Services</h3>
+        <div className="flex items-stretch justify-center">
+            <div className="grid md:grid-cols-2">
+                <div className="h-full pr-6">
+                    <p className="mt-3 mb-12 text-lg text-gray-600 dark:text-slate-400">
+                        Have any questions or need help regarding some issues?
+                        Dont worry, we will provide you will the help fast as possible!
                     </p>
+                    <ul className="mb-6 md:mb-0">
+                        <li className="flex">
+                            <div className="flex h-10 w-10 items-center justify-center rounded bg-[#2cb1bc] text-gray-50">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"
+                                    strokeLinejoin="round" className="h-6 w-6">
+                                    <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"></path>
+                                    <path
+                                        d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div className="ml-4 mb-4">
+                                <h3 className="mb-2 text-lg font-medium leading-6 text-[#14919b]">Our Address
+                                </h3>
+                                <p className="text-gray-600 dark:text-slate-400">1100 Nørrebrogade 12</p>
+                                <p className="text-gray-600 dark:text-slate-400">Copenhagen, Denmark</p>
+                            </div>
+                        </li>
+                        <li className="flex">
+                            <div className="flex h-10 w-10 items-center justify-center rounded bg-[#2cb1bc] text-gray-50">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"
+                                    strokeLinejoin="round" className="h-6 w-6">
+                                    <path
+                                        d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2">
+                                    </path>
+                                    <path d="M15 7a2 2 0 0 1 2 2"></path>
+                                    <path d="M15 3a6 6 0 0 1 6 6"></path>
+                                </svg>
+                            </div>
+                            <div className="ml-4 mb-4">
+                                <h3 className="mb-2 text-lg font-medium leading-6 text-[#14919b]">Point of Contact
+                                </h3>
+                                <p className="text-gray-600 dark:text-slate-400">Jannick Pedersen</p>
+                                <p className="text-gray-600 dark:text-slate-400">Mobile: +1 (123) 456-7890</p>
+                                <p className="text-gray-600 dark:text-slate-400">Mail: jannick@live.dk</p>
+                            </div>
+                        </li>
+                        <li className="flex">
+                            <div className="flex h-10 w-10 items-center justify-center rounded bg-[#2cb1bc] text-gray-50">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"
+                                    strokeLinejoin="round" className="h-6 w-6">
+                                    <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"></path>
+                                    <path d="M12 7v5l3 3"></path>
+                                </svg>
+                            </div>
+                            <div className="ml-4 mb-4">
+                                <h3 className="mb-2 text-lg font-medium leading-6 text-[#14919b]">Working
+                                    hours</h3>
+                                <p className="text-gray-600 dark:text-slate-400">Monday - Friday: 08:00 - 17:00</p>
+                                <p className="text-gray-600 dark:text-slate-400">Saturday &amp; Sunday: 08:00 - 12:00</p>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-
-                <div className="col-span-4 sm:col-span-2 lg:col-span-1 relative px-5 pt-10 pb-2 flex flex-col justify-start items-center border-2 border-[#2cb1bc] rounded-xl">
-                    <span className="absolute -top-6 p-3 border-2 border-[#2cb1bc] rounded-full bg-[#2cb1bc]">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
-                        aria-hidden="true" className="w-7 h-7 text-yellow-640">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
-                            d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4">
-                            </path>
-                        </svg>
-                    </span>
-                    <h2 className="my-1 gradient-red text-lg uppercase tracking-wide">
-                        Legal Use
+                <div className="card h-fit max-w-6xl p-5 md:p-3" id="form">
+                    <h2 className="mb-4 text-2xl font-semibold flex items-center"> 
+                        <RiMailSendLine className="mr-1" size={30} color="#2cb1bc" />Support Ticket
                     </h2>
-                    <p className="py-2 text-center text-sm">
-                        Simply copy and paste the code I provide to implement Fancy Tailwind
-                        components in your projects.
-                    </p>
-                </div>
-
-
-                <div className="col-span-4 sm:col-span-2 lg:col-span-1 relative px-5 pt-10 pb-2 flex flex-col justify-start items-center border-2 border-[#2cb1bc] rounded-xl ">
-                    <span className="absolute -top-6 p-3 border-2 border-[#2cb1bc] rounded-full bg-[#2cb1bc]">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
-                        aria-hidden="true" className="w-7 h-7 text-yellow-640">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
-                            d="M12 18h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
-                        </svg>
-                    </span>
-                    <h2 className="my-1 gradient-red text-lg uppercase tracking-wide">
-                        Point Of Contact
-                    </h2>
-                    <p className="py-2 text-center text-sm">
-                        What makes Fancy Tailwind awesome is that our Tailwind CSS components are -
-                        for the most - animated, beautiful and responsive, which make them so cool.
-                    </p>
-                </div>
-
-                <div className="col-span-4 sm:col-span-2 lg:col-span-1 relative px-5 pt-10 pb-2 flex flex-col justify-start items-center border-2 border-[#2cb1bc] rounded-xl ">
-                    <span className="absolute -top-6 p-3 border-2 border-[#2cb1bc] rounded-full bg-[#2cb1bc]">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
-                        aria-hidden="true" className="w-7 h-7 text-yellow-640">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
-                            d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z">
-                            </path>
-                        </svg>
-                    </span>
-                    <h2 className="my-1 gradient-red text-lg uppercase tracking-wide">
-                        Terms of Service
-                    </h2>
-                    <p className="py-2 text-center text-sm">
-                        Complex components may need some cooking and the JavaScript needed to make
-                        them awesome is included. So dont worry, you will get it all !
-                    </p>
-                </div>
-            </div>
-
-            <div className="max-w-[600px] md:px-16">
-                <h4 className="inline-block flex items-center text-3xl"><RiMailSendLine className="mr-2 inline-block" size={30}/>Support</h4>
-                <p className="py-4 text-sm">We will reply fast as possible!</p>
-                <div className="p-6 border border-[#2cb1bc] sm:rounded-md">
-                    <form method="POST" action="https://herotofu.com/start">
-                        <label className="block mb-6">
-                            <span className="">Your name</span>
-                            <input type="text" name="name" className="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
-                            placeholder="Joe Bloggs"/>
-                        </label>
-                        <label className="block mb-6">
-                            <span className="">Email address</span>
-                            <input name="email" type="email"
-                            className=" block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
-                            placeholder="joe.bloggs@example.com" required />
-                        </label>
-                        <label className="block mb-6">
-                            <span className="">Message</span>
-                            <textarea name="message"
-                            className="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
-                            rows="3"
-                            placeholder="Tell us what you're thinking about...">
-                            </textarea>
-                        </label>
-                        <div className="mb-4">
-                            <button type="submit" className="text-base font-semibold hover:text-white hover:scale-110 h-10 px-5 text-slate-900 bg-gradient-to-r from-[#75ebeb] to-[#53c9d4] rounded-lg transition-colors duration-150 focus:shadow-outline"
-                            >
-                            Contact <RiSendPlaneLine className="inline-block" size={16}/>
-                            </button>
+                    <form id="contactForm">
+                        <div className="mb-6">
+                            <div className="mx-0 mb-1 sm:mb-4">
+                                <div className="mx-0 mb-1 sm:mb-4">
+                                    <label htmlFor="name" className="pb-1 text-xs uppercase tracking-wider"></label><input type="text" id="name" autoComplete="given-name" placeholder="Your name" className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0" name="name" />
+                                </div>
+                                <div className="mx-0 mb-1 sm:mb-4">
+                                    <label htmlFor="email" className="pb-1 text-xs uppercase tracking-wider"></label><input type="email" id="email" autoComplete="email" placeholder="Your email address" className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0" name="email" />
+                                </div>
+                            </div>
+                            <div className="mx-0 mb-1 sm:mb-4">
+                                <label htmlFor="textarea" className="pb-1 text-xs uppercase tracking-wider"></label><textarea id="textarea" name="textarea" cols="30" rows="5" placeholder="Write your message..." className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0"></textarea>
+                            </div>
+                        </div>
+                        <div className="text-center">
+                            <button type="submit" className="w-full bg-[#2cb1bc] px-6 py-3 font-xl rounded-md sm:mb-0 hover:text-[#0a6c74]">Send Message</button>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
-        
+    </div>
     );
 
 };

@@ -39,7 +39,7 @@ const Teams= () => {
     return (
         <div className="flex flex-col">
             <h3 className="text-slate-700 font-bold py-2">Team Members</h3>
-            <h5 className="text-slate-500 text-lg font-medium pb-4">Manage your team members and permission here</h5>
+            <h5 className="text-slate-500 text-lg font-medium pb-4 my-1">Manage your team members and permission here</h5>
             <div className="md:flex gap-4 lg:gap-8">
                 <button 
                     className="max-w-[200px] group flex h-min ring-none items-center justify-center hover:opacity-95 disabled:opacity-50  rounded-lg py-2 px-4 font-dm focus:outline-none !ring-transparent text-slate-800
@@ -57,26 +57,20 @@ const Teams= () => {
                         <table className="min-w-full divide-y divide-gray-200">
                             <thead className="bg-gray-50">
                                 <tr>
-                                    <th scope="col" className="px-6 py-3 text-xs font-bold text-left text-gray-500 uppercase" >
+                                    <th scope="col" className="px-4 py-3 text-sm font-bold text-left text-[#14919b] uppercase" >
                                         ID
                                     </th>
-                                    <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" >
+                                    <th scope="col" className="px-6 py-3 text-left text-sm font-medium text-[#14919b] uppercase tracking-wider" >
                                         Name
                                     </th>
-                                    <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" >
+                                    <th scope="col" className="px-6 py-3 text-left text-sm font-medium text-[#14919b] uppercase tracking-wider" >
+                                        Mail
+                                    </th>
+                                    <th scope="col" className="px-6 py-3 text-left text-sm font-medium text-[#14919b] uppercase tracking-wider" >
                                         Title
                                     </th>
-                                    <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" >
-                                        Status
-                                    </th>
-                                    <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" >
+                                    <th scope="col" className="px-6 py-3 text-left text-sm font-medium text-[#14919b] uppercase tracking-wider" >
                                         Role
-                                    </th>
-                                    <th scope="col" className="relative px-6 py-3">
-                                        <span className="sr-only">Edit</span>
-                                    </th>
-                                    <th scope="col" className="relative px-6 py-3">
-                                        <span className="sr-only">Delete</span>
                                     </th>
                                 </tr>
                             </thead>
@@ -84,45 +78,45 @@ const Teams= () => {
                             <tbody className="bg-white divide-y divide-gray-200">
                                 {people.map(person => (
                                     <tr key={person.email}>
-                                        <td className="px-6 py-4 text-sm font-medium text-gray-800 whitespace-nowrap">
+                                        <td className="px-4 py-4 text-sm font-medium text-gray-800 whitespace-nowrap">
                                             {person.id}
                                         </td>
                                         <td className="px-6 py-4 whitespace-nowrap">
                                             <div className="flex items-center">
-                                            <div className="flex-shrink-0 h-10 w-10">
-                                                <img className="h-10 w-10 rounded-full" src={person.image} alt="" />
+                                                <div className="flex-shrink-0 h-14 w-14">
+                                                    <img className="h-14 w-14 rounded-full" src={person.image} alt="" />
+                                                </div>
+                                                <div className="ml-4">
+                                                    <div className="text-base font-medium text-gray-900">
+                                                        {person.name}
+                                                    </div>
+                                                    <div className="flex items-center py-2 gap-4 lg:gap-6">
+                                                        <a href="#" className="text-[#2cb1bc] hover:text-indigo-900">
+                                                            <FaRegEdit size={22} />
+                                                        </a>
+                                                        <a className="text-red-500 hover:text-red-700" href="#">
+                                                            <FaTrash size={22} />
+                                                        </a>
+                                                    </div>
+                                                
+                                                </div>
                                             </div>
-                                            <div className="ml-4">
-                                                <div className="text-sm font-medium text-gray-900">{person.name}</div>
-                                                <div className="text-sm text-gray-500 underline decoration-solid">{person.email}</div>
-                                            </div>
-                                            </div>
-                                        </td>
-                                        <td className="px-6 py-4 whitespace-nowrap">
-                                            <div className="text-sm text-gray-900">{person.title}</div>
-                                            <div className="text-sm text-gray-500">{person.department}</div>
                                         </td>
                                         <td className="px-6 py-4 whitespace-nowrap">
                                             <span
-                                            className="px-2 inline-flex text-xs leading-5
-                                            font-semibold rounded-full bg-green-100 text-green-800"
+                                            className="text-sm text-[#14919b] font-bold underline decoration-solid"
                                             >
-                                            Active
+                                            {person.email}
                                             </span>
                                         </td>
-                                        <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                        <td className="px-6 py-4 whitespace-nowrap">
+                                            <div className="text-base text-gray-900">{person.title}</div>
+                                            <div className="text-sm text-[#14919b]">{person.department}</div>
+                                        </td>
+                                        <td className="px-6 py-4 whitespace-nowrap text-sm text-[#14919b]">
                                             {person.role}
                                         </td>
-                                        <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
-                                            <a href="#" className="text-indigo-600 hover:text-indigo-900">
-                                                <FaRegEdit size={20} />
-                                            </a>
-                                        </td>
-                                        <td className="px-6 py-4 text-sm font-medium text-right whitespace-nowrap">
-                                            <a className="text-red-500 hover:text-red-700" href="#">
-                                            <FaTrash size={20} />
-                                            </a>
-                                        </td>
+                                    
                                     </tr>
                                 ))}
                             </tbody>

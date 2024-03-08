@@ -51,8 +51,8 @@ const SpringModal = ({ isOpen, setIsOpen }) => {
                                         <img className="object-cover rounded-full" src="https://tailwindflex.com/public/images/user.png" />
                                     </div>
                                     <div className="flex-grow text-center md:text-left">
-                                        <p className="font-bold text-slate-800">Point Of Contact.</p>
-                                        <h3 className="text-xl heading text-slate-900">Jannick Pedersen.</h3>
+                                        <p className="font-semibold text-slate-100">Point Of Contact.</p>
+                                        <h3 className="text-xl heading font-bold text-slate-900">Jannick Pedersen.</h3>
                                         <p className="mt-2 mb-3">Reach out for any questions.</p>
                                         <hr />
                                         <div className="flex gap-1 my-2 text-slate-900 font-bold"><MdPhoneIphone size={22} color="black"/>(+45)45668455</div>
