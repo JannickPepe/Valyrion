@@ -9,11 +9,19 @@ const Contact = () => {
         <div className="flex items-stretch justify-center">
             <div className="grid md:grid-cols-2">
                 <div className="h-full pr-6">
-                    <p className="mt-3 mb-12 text-lg text-gray-600 dark:text-slate-400">
-                        Have any questions or need help regarding some issues?
-                        Dont worry, we will provide you will the help fast as possible!
+                    <div className="mt-3 mb-12 text-lg text-gray-600 dark:text-slate-400">
+                        <p>
+                            Have any questions or need help regarding some issues?
+                            Dont worry, we will provide you will the help fast as possible!
+                        </p>
+                        
+                        <p className="text-base md:mt-2 mb-2 lg:mb-0 underline flex items-center text-gray-500 hover:cursor-pointer hover:text-[#14919b] hover:ml-1 transition delay-100">
+                            Terms of Use<RiArrowRightLine size={16} className="ml-1 mt-0.5" />
+                        </p>
+                    
                         <hr className="mt-4"/> 
-                    </p>
+                    </div>
+                    
                     <ul className="mb-6 md:mb-0 -mt-2">
                         <li className="flex">
                             <div className="flex h-10 w-10 items-center justify-center rounded bg-[#2cb1bc] text-gray-50">
@@ -70,11 +78,7 @@ const Contact = () => {
                             </div>
                         </li>
                     </ul>
-                    <div>
-                        <p className="md:mt-6 mb-2 lg:mb-0 underline flex text-gray-500 hover:cursor-pointer hover:text-[#14919b] hover:ml-1 transition delay-100">
-                            Terms of Use<RiArrowRightLine size={18} className="ml-1" />
-                        </p>
-                    </div>
+                  
                 </div>
                 <div className="card h-fit max-w-6xl p-5 md:p-3" id="form">
                     <h2 className="mb-4 text-2xl font-semibold flex items-center"> 
