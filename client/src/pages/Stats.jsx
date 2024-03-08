@@ -29,11 +29,11 @@ const Stats = () => {
         <>
             <StatsContainer defaultStats={defaultStats} />
             
-            <div className='grid grid-cols-2'>
-                <div className='col-span-1'>
+            <div className='grid grid-cols-1 lg:grid-cols-2 gap-0 lg:gap-4'>
+                <div className='col-span-1 px-2 lg:px-0'>
                     <YTDBox />
                 </div>
-                <div className='col-span-1'>
+                <div className='col-span-1 px-2 lg:px-0'>
                     <MonthlyBox />
                 </div>
             </div>
