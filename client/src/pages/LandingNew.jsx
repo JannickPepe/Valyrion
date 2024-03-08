@@ -43,8 +43,8 @@ const LandingNew = () => {
                                 <span className="text-theme-color">Creative</span> Multipurpose Statictic <span className="text-theme-color">
                                     Templates</span>
                                 </h2>
-                                <p className="mt-8 lg:mr-8 ">
-                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna.
+                                <p className="mt-8 lg:mr-8 font-base lg:text-lg">
+                                    With <span className="font-bold underline">Partner Portal</span> you will have an amazing analytical dashboard, with visualized statictic data and much more!
                                 </p>
                                 <div className="hero_btn mt-10 flex gap-8">
                                     <Link to='/register' className="main-btn hover:text-black">Register</Link>

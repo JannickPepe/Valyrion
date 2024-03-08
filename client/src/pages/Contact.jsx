@@ -15,7 +15,7 @@ const Contact = () => {
                             Dont worry, we will provide you will the help fast as possible!
                         </p>
                         
-                        <p className="text-base md:mt-2 mb-2 lg:mb-0 underline flex items-center text-gray-500 hover:cursor-pointer hover:text-[#14919b] hover:ml-1 transition delay-100">
+                        <p className="text-base mt-2 mb-2 lg:mb-0 underline flex items-center text-gray-500 hover:cursor-pointer hover:text-[#14919b] hover:ml-1 transition delay-100">
                             Terms of Use<RiArrowRightLine size={16} className="ml-1 mt-0.5" />
                         </p>
                     

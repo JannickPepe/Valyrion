@@ -48,7 +48,9 @@ const Teams= () => {
                     <IoAddOutline size={20} />
                     <span className="ml-2">Add team member</span>
                 </button>
-                <PointOfContact />
+                <div className="my-2 lg:my-0">
+                    <PointOfContact />
+                </div>
             </div>
         
             <div className="mt-6 mb-4 pb-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
