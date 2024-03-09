@@ -29,7 +29,7 @@ const MonthlyBox = () => {
                         </span>
                         <hr className="max-w-[120px] mx-auto my-1 border-black border-b-1"/>
                         <span className="font-semibold">3.000.000 DKK</span>
-                        <div className="flex items-center justify-center">
+                        <div className="flex items-center justify-center mb-1 hover:scale-110 transition-transform">
                             <BsGraphDownArrow className="mr-1 hidden md:block" size={14}/><span className="text-xs text-red-500 font-semibold">25.15%</span><span className="text-xs font-light ml-1"> from last month</span>
                         </div>
                     </div>
@@ -46,7 +46,7 @@ const MonthlyBox = () => {
                         </span>
                         <hr className="max-w-[120px] mx-auto my-1 border-black border-b-1"/>
                         <span className="font-semibold">1.420</span>
-                        <div className="flex items-center justify-center">
+                        <div className="flex items-center justify-center hover:scale-110 transition-transform">
                             <BsGraphDownArrow className="mr-1 hidden md:block" size={14}/><span className="text-xs text-red-500 font-semibold">26.92%</span><span className="text-xs font-light ml-1"> from last month</span>
                         </div>
                     </div>
@@ -63,7 +63,7 @@ const MonthlyBox = () => {
                         </span>
                         <hr className="max-w-[120px] mx-auto my-1 border-black border-b-1"/>
                         <span className="font-semibold">604</span>
-                        <div className="flex items-center justify-center">
+                        <div className="flex items-center justify-center hover:scale-110 transition-transform">
                             <BsGraphDownArrow className="mr-1 hidden md:block" size={14}/><span className="text-xs text-red-500 font-semibold">2.19%</span><span className="text-xs font-light ml-1"> from last month</span>
                         </div>
                     </div>
@@ -80,7 +80,7 @@ const MonthlyBox = () => {
                         </span>
                         <hr className="max-w-[120px] mx-auto my-1 border-black border-b-1"/>
                         <span className="font-semibold">19</span>
-                        <div className="flex items-center justify-center">
+                        <div className="flex items-center justify-center hover:scale-110 transition-transform">
                             <BsGraphUpArrow className="mr-1 hidden md:block" size={14}/><span className="text-xs text-green-500 font-semibold">2.19%</span><span className="text-xs font-light ml-1"> from last month</span>
                         </div>
                     </div>
@@ -97,7 +97,7 @@ const MonthlyBox = () => {
                         </span>
                         <hr className="max-w-[120px] mx-auto my-1 border-black border-b-1"/>
                         <span className="font-semibold">3456</span>
-                        <div className="flex items-center justify-center">
+                        <div className="flex items-center justify-center hover:scale-110 transition-transform">
                             <BsGraphUpArrow className="mr-1 hidden md:block" size={14}/><span className="text-xs text-green-500 font-semibold">2.19%</span><span className="text-xs font-light ml-1"> from last month</span>
                         </div>
                     </div>
@@ -114,7 +114,7 @@ const MonthlyBox = () => {
                         </span>
                         <hr className="max-w-[120px] mx-auto my-1 border-black border-b-1"/>
                         <span className="font-semibold">555 DKK</span>
-                        <div className="flex items-center justify-center">
+                        <div className="flex items-center justify-center hover:scale-110 transition-transform">
                             <BsGraphUpArrow className="mr-1 hidden md:block" size={14}/><span className="text-xs text-green-500 font-semibold">0 DKK</span><span className="text-xs font-light ml-1"> from last month</span>
                         </div>
                     </div>
@@ -131,7 +131,7 @@ const MonthlyBox = () => {
                         </span>
                         <hr className="max-w-[120px] mx-auto my-1 border-black border-b-1"/>
                         <span className="font-semibold">19</span>
-                        <div className="flex items-center justify-center">
+                        <div className="flex items-center justify-center hover:scale-110 transition-transform">
                             <BsGraphUpArrow className="mr-1 hidden md:block" size={14}/><span className="text-xs text-green-500 font-semibold">0 units</span><span className="text-xs font-light ml-1"> from last month</span>
                         </div>
                     </div>
