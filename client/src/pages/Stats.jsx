@@ -31,25 +31,25 @@ const Stats = () => {
         <>
             
 
-            <div className='grid grid-cols-1 lg:grid-cols-2 gap-0 lg:gap-4'>
+            <div className='grid grid-cols-1 lg:grid-cols-2 gap-0 lg:gap-6'>
                 <div className='col-span-1 px-2 lg:px-0'>
-                    <div className="mb-2 lg:mb-4 flex items-center justify-center">
+                    <div className="mb-4 mt-4 lg:mt-0 lg:mb-4 flex items-center justify-center">
                         <FaDatabase color="#0a6c74" size={24} className="mr-1" />
-                        <h4>YTD Status</h4>
+                        <h4 className='text-2xl md:text-3xl lg:text-3xl'>YTD Status</h4>
                     </div>
                     <StatsContainer defaultStats={defaultStats} />
                 </div>
 
                 <div className='col-span-1 px-2 lg:px-0'>
-                    <div className="mb-2 lg:mb-4 flex items-center justify-center">
+                    <div className="mb-4 mt-10 lg:mt-0 lg:mb-4 flex items-center justify-center">
                         <FaDatabase color="#0a6c74" size={24} className="mr-1" />
-                        <h4>Monthly Status</h4>
+                        <h4 className='text-2xl md:text-3xl lg:text-3xl'>Monthly Status</h4>
                     </div>
                     <StatsContainer defaultStats={defaultStats} />
                 </div>
             </div>
             
-            <div className='grid grid-cols-1 lg:grid-cols-2 gap-0 lg:gap-4'>
+            <div className='grid grid-cols-1 lg:grid-cols-2 gap-0 lg:gap-6'>
                 <div className='col-span-1 px-2 lg:px-0'>
                     <YTDBox />
                 </div>

@@ -22,7 +22,6 @@
 
 .main-btn {
   --tw-bg-opacity: 1;
-  background-color: #0e7c86;
 }
 
 .main-btn:hover{
@@ -44,7 +43,6 @@
   position: relative;
   text-align: center;
   --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity));
 }
 
 .main-btn:hover{

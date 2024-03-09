@@ -1,7 +1,9 @@
 
 import { LuClipboardList } from "react-icons/lu";
 import { CiImport } from "react-icons/ci";
-
+import complete from "../../assets/images/check.png";
+import pending from "../../assets/images/clockwise.png";
+import fail from "../../assets/images/close.png";
 
 const OrderTable = () => {
 
@@ -50,7 +52,7 @@ const OrderTable = () => {
                             Total (ex. VAT)
                         </th>
                         <th className="px-6 py-3 text-left text-sm font-semibold text-black">
-                            Completed
+                            Status
                             <svg xmlns="http://www.w3.org/2000/svg" className="w-3 h-3 fill-white inline cursor-pointer ml-2"
                             viewBox="0 0 401.998 401.998">
                             <path d="M73.092 164.452h255.813c4.949 0 9.233-1.807 12.848-5.424 3.613-3.616 5.427-7.898 5.427-12.847s-1.813-9.229-5.427-12.85L213.846 5.424C210.232 1.812 205.951 0 200.999 0s-9.233 1.812-12.85 5.424L60.242 133.331c-3.617 3.617-5.424 7.901-5.424 12.85 0 4.948 1.807 9.231 5.424 12.847 3.621 3.617 7.902 5.424 12.85 5.424zm255.813 73.097H73.092c-4.952 0-9.233 1.808-12.85 5.421-3.617 3.617-5.424 7.898-5.424 12.847s1.807 9.233 5.424 12.848L188.149 396.57c3.621 3.617 7.902 5.428 12.85 5.428s9.233-1.811 12.847-5.428l127.907-127.906c3.613-3.614 5.427-7.898 5.427-12.848 0-4.948-1.813-9.229-5.427-12.847-3.614-3.616-7.899-5.42-12.848-5.42z"
@@ -96,22 +98,17 @@ const OrderTable = () => {
                         <td className="px-6 py-3 text-sm">
                             06/03/2024
                         </td>
-                        <td className="px-6 py-3 text-sm">
+                        <td className="px-6 py-3 underline font-bold">
                             999.-
                         </td>
                         <td className="px-6 py-3 text-sm">
-                            0.-
+                            0
                         </td>
-                        <td className="px-6 py-3">
+                        <td className="px-6 py-3 underline font-bold">
                             769,99.-
                         </td>
                         <td className="px-6 py-3 text-sm">
-                            <label className="relative cursor-pointer">
-                                <input type="checkbox" className="sr-only peer" />
-                                <div
-                                    className="w-11 h-6 flex items-center bg-gray-300 rounded-full peer peer-checked:after:translate-x-full after:absolute after:left-[2px] peer-checked:after:border-white after:bg-white after:border after:border-gray-300 after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-[#87eaf2]">
-                                </div>
-                            </label>
+                            <img src={complete} alt="complete" className="max-w-[30px] text-white bg-white rounded-full" />
                         </td>
                         <td>
                             
@@ -148,22 +145,17 @@ const OrderTable = () => {
                         <td className="px-6 py-3 text-sm">
                             06/03/2024
                         </td>
-                        <td className="px-6 py-3 text-sm">
+                        <td className="px-6 py-3 underline font-bold">
                             999.-
                         </td>
                         <td className="px-6 py-3 text-sm">
-                            0.-
+                            0
                         </td>
-                        <td className="px-6 py-3">
+                        <td className="px-6 py-3 underline font-bold">
                             769,99.-
                         </td>
                         <td className="px-6 py-3 text-sm">
-                            <label className="relative cursor-pointer">
-                            <input type="checkbox" className="sr-only peer" />
-                            <div
-                                className="w-11 h-6 flex items-center bg-gray-300 rounded-full peer peer-checked:after:translate-x-full after:absolute after:left-[2px] peer-checked:after:border-white after:bg-white after:border after:border-gray-300 after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-[#87eaf2]">
-                            </div>
-                            </label>
+                            <img src={complete} alt="complete" className="max-w-[30px]" />
                         </td>
                         <td>
 
@@ -200,22 +192,17 @@ const OrderTable = () => {
                         <td className="px-6 py-3 text-sm">
                             06/03/2024
                         </td>
-                        <td className="px-6 py-3 text-sm">
+                        <td className="px-6 py-3 underline font-bold">
                             999.-
                         </td>
                         <td className="px-6 py-3 text-sm">
-                            0.-
+                            0
                         </td>
-                        <td className="px-6 py-3">
+                        <td className="px-6 py-3 underline font-bold">
                             769,99.-
                         </td>
                         <td className="px-6 py-3 text-sm">
-                            <label className="relative cursor-pointer">
-                            <input type="checkbox" className="sr-only peer" />
-                            <div
-                                className="w-11 h-6 flex items-center bg-gray-300 rounded-full peer peer-checked:after:translate-x-full after:absolute after:left-[2px] peer-checked:after:border-white after:bg-white after:border after:border-gray-300 after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-[#87eaf2]">
-                            </div>
-                            </label>
+                            <img src={pending} alt="complete" className="max-w-[30px] rounded-full bg-yellow-500" />
                         </td>
                         <td>
 
@@ -252,22 +239,17 @@ const OrderTable = () => {
                         <td className="px-6 py-3 text-sm">
                             06/03/2024
                         </td>
-                        <td className="px-6 py-3 text-sm">
+                        <td className="px-6 py-3 underline font-bold">
                             999.-
                         </td>
                         <td className="px-6 py-3 text-sm">
-                            0.-
+                            0
                         </td>
-                        <td className="px-6 py-3">
+                        <td className="px-6 py-3 underline font-bold">
                             769,99.-
                         </td>
                         <td className="px-6 py-3 text-sm">
-                            <label className="relative cursor-pointer">
-                            <input type="checkbox" className="sr-only peer" />
-                            <div
-                                className="w-11 h-6 flex items-center bg-gray-300 rounded-full peer peer-checked:after:translate-x-full after:absolute after:left-[2px] peer-checked:after:border-white after:bg-white after:border after:border-gray-300 after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-[#87eaf2]">
-                            </div>
-                            </label>
+                            <img src={complete} alt="complete" className="max-w-[30px]" />
                         </td>
                         <td>
 
@@ -302,25 +284,20 @@ const OrderTable = () => {
                             </div>
                             </div>
                         </td>
-                        <td className="px-6 py-3 text-sm    ">
+                        <td className="px-6 py-3 text-sm">
                             06/03/2024
                         </td>
-                        <td className="px-6 py-3 text-sm">
+                        <td className="px-6 py-3 underline font-bold">
                             999.-
                         </td>
                         <td className="px-6 py-3 text-sm">
-                            0.-
+                            1
                         </td>
-                        <td className="px-6 py-3">
+                        <td className="px-6 py-3 underline font-bold">
                             769,99.-
                         </td>
                         <td className="px-6 py-3 text-sm">
-                            <label className="relative cursor-pointer">
-                            <input type="checkbox" className="sr-only peer" />
-                            <div
-                                className="w-11 h-6 flex items-center bg-gray-300 rounded-full peer peer-checked:after:translate-x-full after:absolute after:left-[2px] peer-checked:after:border-white after:bg-white after:border after:border-gray-300 after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-[#87eaf2]">
-                            </div>
-                            </label>
+                            <img src={fail} alt="complete" className="max-w-[30px] rounded-full" />
                         </td>
                         <td>
                             

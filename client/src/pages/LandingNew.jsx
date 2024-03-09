@@ -60,8 +60,8 @@ const LandingNew = () => {
                                     With <span className="font-bold underline">Partner Portal</span> you will have an amazing analytical dashboard, with visualized statictic data and much more!
                                 </p>
                                 <div className="hero_btn mt-10 flex gap-8">
-                                    <Link to='/register' className="main-btn hover:text-black">Register</Link>
-                                    <Link to='/login' className="main-btn hover:text-black">Login / Demo</Link>
+                                    <Link to='/register' className="main-btn bg-[#0e7c86] text-white hover:text-black">Register</Link>
+                                    <Link to='/login' className="main-btn bg-[#54d1db] text-black hover:text-white">Login / Demo</Link>
                                 </div>
                             
                             </div> 
