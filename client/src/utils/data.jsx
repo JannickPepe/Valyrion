@@ -1,5 +1,8 @@
 
+import logo from "../assets/images/logo.png";
 
+
+//
 export const landing = [
     {
         companytitle: "Valyrion",
@@ -9,9 +12,9 @@ export const landing = [
         texttwo: "Partner Portal",
         textthree: "you will have an amazing analytical dashboard, with visualized statictic data and much more!",
     }
-] as const;
+];
 
-
+//
 export const faq = [
     {
         
@@ -44,9 +47,9 @@ export const faq = [
         text: "SAAS platform is a cloud-based software service that allows users to access and use a variety of tools and functionality."
     },
 
-] as const;
+];
 
-
+//
 export const people = [
     {
         id: 1,
@@ -76,4 +79,8 @@ export const people = [
         image: 'https://bit.ly/3vaOTe1',
     },
 
-] as const;
+];
+
+
+// 
+export const companyLogos = [logo, logo, logo, logo, logo, logo];

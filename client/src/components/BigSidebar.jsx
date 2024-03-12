@@ -5,6 +5,7 @@ import Logo from './Logo';
 import { useDashboardContext } from '../pages/DashboardLayout';
 
 
+
 const BigSidebar = () => {
   
   const { showSidebar } = useDashboardContext();
@@ -21,6 +22,11 @@ const BigSidebar = () => {
             <Logo />
           </header>
           <NavLinks isBigSidebar />
+          <div className='px-4 lg:pl-10 fixed inset-x-0 bottom-2 mx-auto flex justify-start'>
+            <div className='text-xl font-semibol bg-teal-500 px-2 py-1 rounded-md'>
+              Point of Contact
+            </div>
+          </div>
         </div>
       </div>
     </Wrapper>
