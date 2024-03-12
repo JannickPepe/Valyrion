@@ -4,6 +4,8 @@ import BarChart from './BarChart';
 import AreaChart from './AreaChart';
 import Wrapper from '../assets/wrappers/ChartsContainer';
 import { IoBarChartSharp } from 'react-icons/io5';
+import { SlRefresh } from "react-icons/sl";
+
 
 
 const ChartsContainer = ({ data }) => {
@@ -17,8 +19,9 @@ const ChartsContainer = ({ data }) => {
                         <IoBarChartSharp color="#0a6c74" size={24} className="mr-1 -mt-2.5" />
                         <h4>YTD Orders</h4>
                     </div>
-                    <button type='button' onClick={() => setBarChart(!barChart)}>
+                    <button type='button' className='flex mx-auto' onClick={() => setBarChart(!barChart)}>
                         {barChart ? 'Area Chart' : 'Bar Chart'}
+                        <SlRefresh className='ml-1' color='black' />
                     </button>
                     {barChart ? <BarChart data={data} /> : <AreaChart data={data} />}
                 </div>
@@ -28,8 +31,9 @@ const ChartsContainer = ({ data }) => {
                         <IoBarChartSharp color="#0a6c74" size={24} className="mr-1 -mt-2.5" />
                         <h4>Monthly Orders</h4>
                     </div>
-                    <button type='button' onClick={() => setBarChart(!barChart)}>
+                    <button type='button' className='flex mx-auto' onClick={() => setBarChart(!barChart)}>
                         {barChart ? 'Bar Chart' : 'Area Chart'}
+                        <SlRefresh className='ml-1' color='black' />
                     </button>
                     {barChart ? <AreaChart data={data} /> : <BarChart data={data} />}
                 </div>

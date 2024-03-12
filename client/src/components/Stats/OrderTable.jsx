@@ -202,7 +202,7 @@ const OrderTable = () => {
                             769,99.-
                         </td>
                         <td className="px-6 py-3 text-sm">
-                            <img src={pending} alt="complete" className="max-w-[30px] rounded-full bg-yellow-500" />
+                            <img src={pending} alt="complete" className="max-w-[30px] rounded-full" />
                         </td>
                         <td>
 

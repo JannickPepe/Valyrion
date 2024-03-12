@@ -17,3 +17,5 @@ export { default as PointOfContact } from './PointOfContact';
 export { default as OrderTable } from './Stats/OrderTable';
 export { default as YTDBox } from './Stats/YTDBox';
 export { default as MonthlyBox } from './Stats/MonthlyBox';
+export { default as SearchFilter } from './SearchFilter';
+export { default as DashboardPOT } from './DashboardPOT';

@@ -11,7 +11,7 @@ const StatsContainer = ({ defaultStats }) => {
             title: 'total orders',
             count: defaultStats?.declined || 0,
             icon: <FaShoppingBasket />,
-            color: '#647acb',
+            color: '#2cb1bc',
             bcg: '#bef8fd',
         },
         {

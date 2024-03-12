@@ -4,12 +4,12 @@ const DropDownYear = () => {
 
     return (
         <div className="mt-3 relative inline-block text-left">
-            <div className="group bg-gradient-to-br from-indigo-400 to-indigo-600 rounded-full px-4 py-0.5">
+            <div className="group bg-gradient-to-br from-[#2cb1bc] to-[#0e7c86] rounded-full px-2">
                 <button type="button" className="inline-flex justify-center items-center w-full px-4 py-2 text-sm font-medium">
-                    <span className="text-white hover:text-black underline">
+                    <span className="text-white hover:text-black underline text-base">
                         2024
                     </span>
-                    <svg className="w-6 h-6 ml-2 -mr-1 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                    <svg className="w-6 h-6 -mr-1 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                         <path fillRule="evenodd" d="M10 12l-5-5h10l-5 5z" />
                     </svg>
                 </button>

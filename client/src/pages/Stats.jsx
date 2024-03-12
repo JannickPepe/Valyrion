@@ -1,5 +1,5 @@
 /* eslint-disable react-refresh/only-export-components */ 
-import { ChartsContainer, OrderTable, StatsContainer } from '../components';
+import { ChartsContainer, OrderTable, SearchFilter, StatsContainer } from '../components';
 import MonthlyBox from '../components/Stats/MonthlyBox';
 import YTDBox from '../components/Stats/YTDBox';
 import customFetch from '../utils/customFetch';
@@ -30,7 +30,7 @@ const Stats = () => {
     return (
         <>
             
-
+            <SearchFilter />
             <div className='grid grid-cols-1 lg:grid-cols-2 gap-0 lg:gap-6'>
                 <div className='col-span-1 px-2 lg:px-0'>
                     <div className="mb-4 mt-4 lg:mt-0 lg:mb-4 flex items-center justify-center">
