@@ -1,38 +1,8 @@
 import { FaRegEdit, FaTrash } from "react-icons/fa";
 import { IoAddOutline } from "react-icons/io5";
 import { PointOfContact } from "../components";
+import { people } from "../utils/data";
 
-
-
-const people = [
-    {
-        id: 1,
-        name: 'Jane Cooper',
-        title: 'Regional Paradigm Technician',
-        department: 'Optimization',
-        role: 'Admin',
-        email: 'jane.cooper@example.com',
-        image: 'https://bit.ly/33HnjK0',
-    },
-    {
-        id: 2,
-        name: 'John Doe',
-        title: 'Regional Paradigm Technician',
-        department: 'Optimization',
-        role: 'Tester',
-        email: 'john.doe@example.com',
-        image: 'https://bit.ly/3I9nL2D',
-    },
-    {
-        id: 3,
-        name: 'Veronica Lodge',
-        title: 'Regional Paradigm Technician',
-        department: 'Optimization',
-        role: ' Software Engineer',
-        email: 'veronica.lodge@example.com',
-        image: 'https://bit.ly/3vaOTe1',
-    },
-];
 
 const Teams= () => {
 

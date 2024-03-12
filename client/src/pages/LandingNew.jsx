@@ -5,6 +5,9 @@ import shapefour from "../assets/images/shape/shape-4.svg";
 import shapeheader from "../assets/images/shape/header-image.svg";
 import { Link } from "react-router-dom";
 import { IoStatsChartSharp } from "react-icons/io5";
+import { landing } from "../utils/data";
+import React from "react";
+
 
 
 const LandingNew = () => {
@@ -40,31 +43,38 @@ const LandingNew = () => {
                     <div className="row">
                         <div className="w-full lg:w-1/2 mt-4 lg:-mt-24">
                             <div className="header_hero_content">
-                                <h5 className="hero_title font-bold mb-1 text-xl lg:px-2 underline flex items-center"><IoStatsChartSharp size={24} className="mr-1"/><span className="relative before:absolute before:inset-0 before:animate-typewriter before:bg-[#38bec9]">Valyrion.</span></h5>
-                                <div className="hero_title text-2xl sm:text-4xl md:text-5xl lg:text-4xl xl:text-5xl font-extrabold">
-                                    <span className="text-theme-color">Creative</span> Multipurpose Statictic{" "}
-                                    <span className="text-theme-color font-extrabold text-3xl md:text-4xl [text-wrap:balance] bg-clip-text text-transparent">
-                                        <span className="inline-flex flex-col h-[calc(theme(fontSize.3xl)*theme(lineHeight.snug))] md:h-[calc(theme(fontSize.4xl)*theme(lineHeight.snug))] overflow-hidden">
-                                            <ul className="animate-text-slide-5 text-3xl sm:text-4xl lg:text-5xl">
-                                                <li>Charts</li>
-                                                <li>Schemas</li>
-                                                <li>Tables</li>
-                                                <li>Indicators</li>
-                                                <li>Overview</li>
-                                                <li aria-hidden="true">Charts</li>
-                                            </ul>
-                                        </span>
-                                    </span>
-                                </div>
-                                <p className="mt-8 lg:mr-8 font-base lg:text-lg">
-                                    With <span className="font-bold underline">Partner Portal</span> you will have an amazing analytical dashboard, with visualized statictic data and much more!
-                                </p>
-                                <div className="hero_btn mt-10 flex gap-8">
-                                    <Link to='/register' className="main-btn bg-[#0e7c86] text-white hover:text-black">Register</Link>
-                                    <Link to='/login' className="main-btn bg-[#54d1db] text-black hover:text-white">Login / Demo</Link>
-                                </div>
-                            
+                                {landing.map((item, index) => (
+                                    <React.Fragment key={index}>
+                                        <h5 className="hero_title font-bold mb-1 text-xl lg:px-2 underline flex items-center"><IoStatsChartSharp size={24} className="mr-1"/><span className="relative before:absolute before:inset-0 before:animate-typewriter before:bg-[#38bec9]">{item.companytitle}</span></h5>
+                                        <div className="hero_title text-2xl sm:text-4xl md:text-5xl lg:text-4xl xl:text-5xl font-extrabold">
+                                            <span className="text-theme-color">
+                                                {item.subone}{" "}
+                                            </span> 
+                                            {item.subtwo}{" "}
+                                            <span className="text-theme-color font-extrabold text-3xl md:text-4xl [text-wrap:balance] bg-clip-text text-transparent">
+                                                <span className="inline-flex flex-col h-[calc(theme(fontSize.3xl)*theme(lineHeight.snug))] md:h-[calc(theme(fontSize.4xl)*theme(lineHeight.snug))] overflow-hidden">
+                                                    <ul className="animate-text-slide-5 text-3xl sm:text-4xl lg:text-5xl">
+                                                        <li>Charts</li>
+                                                        <li>Schemas</li>
+                                                        <li>Tables</li>
+                                                        <li>Indicators</li>
+                                                        <li>Overview</li>
+                                                        <li aria-hidden="true">Charts</li>
+                                                    </ul>
+                                                </span>
+                                            </span>
+                                        </div>
+                                        <p className="mt-8 lg:mr-8 font-base lg:text-lg">
+                                            {item.textone} <span className="font-bold underline">{item.texttwo}</span> {item.textthree}
+                                        </p>
+                                        <div className="hero_btn mt-10 flex gap-8">
+                                            <Link to='/register' className="main-btn bg-[#0e7c86] text-white hover:text-black">Register</Link>
+                                            <Link to='/login' className="main-btn bg-[#54d1db] text-black hover:text-white">Login / Demo</Link>
+                                        </div>
+                                    </React.Fragment>
+                                ))}
                             </div> 
+                        
                         </div>
                     </div>
                 </div>
