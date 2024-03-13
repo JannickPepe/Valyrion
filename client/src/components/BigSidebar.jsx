@@ -5,6 +5,7 @@ import NavLinks from './NavLinks';
 import Logo from './Logo';
 import { useDashboardContext } from '../pages/DashboardLayout';
 import DashboardPOT from './DashboardPOT';
+import NoPOT from './NoPOT';
 
 
 
@@ -29,11 +30,9 @@ const BigSidebar = () => {
               <button onClick={() => setIsVisible(!isVisible)}>
                 {isVisible ? `Close Contact` : 'Show Contact'}
               </button>
-              {isVisible && (
-                <div>
-                  <DashboardPOT />
-                </div>
-              )}
+              <div>
+                  {isVisible ? <DashboardPOT /> : <NoPOT />}
+              </div>
           </div>
         </div>
       </div>

@@ -9,6 +9,10 @@
   }
 }
 
+.tooltip:hover .tooltip-item {
+  visibility: visible;
+}
+
 
 /* =========== hero =========== */
 

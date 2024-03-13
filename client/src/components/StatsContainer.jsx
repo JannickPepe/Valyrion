@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 
-import { FaSuitcaseRolling, FaCalendarCheck, FaBug, FaShoppingBasket } from 'react-icons/fa';
+import { FaCalendarCheck, FaShoppingBasket } from 'react-icons/fa';
 import Wrapper from '../assets/wrappers/StatsContainer';
 import StatItem from './StatItem';
 
@@ -20,20 +20,6 @@ const StatsContainer = ({ defaultStats }) => {
             icon: <FaCalendarCheck />,
             color: '#2cb1bc',
             bcg: '#e0e8f9',
-        },
-        {
-            title: 'pending orders',
-            count: defaultStats?.pending || 0,
-            icon: <FaSuitcaseRolling />,
-            color: '#f59e0b',
-            bcg: '#fef3c7',
-        },
-        {
-            title: 'refund orders',
-            count: defaultStats?.declined || 0,
-            icon: <FaBug />,
-            color: '#d66a6a',
-            bcg: '#ffeeee',
         },
     ];
     return (
