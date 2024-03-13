@@ -2,7 +2,7 @@
 import logo from "../assets/images/logo.png";
 
 
-//
+// Landing Hero
 export const landing = [
     {
         companytitle: "Valyrion",
@@ -14,7 +14,15 @@ export const landing = [
     }
 ];
 
-//
+// Landing Logo Slider
+export const logoslider = [
+    {
+        title: 'Companies Who Have Joined The Cause',
+        logos: [logo, logo, logo, logo, logo, logo],
+    }
+];
+
+// Admin FAQ
 export const faq = [
     {
         
@@ -49,7 +57,7 @@ export const faq = [
 
 ];
 
-//
+// Admin Teams
 export const people = [
     {
         id: 1,
@@ -82,5 +90,5 @@ export const people = [
 ];
 
 
-// 
-export const companyLogos = [logo, logo, logo, logo, logo, logo];
+// Old Landing Logo Slider
+// export const companyLogos = [logo, logo, logo, logo, logo, logo];
