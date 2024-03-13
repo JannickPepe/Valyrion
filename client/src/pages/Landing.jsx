@@ -73,7 +73,7 @@ const Landing = () => {
                         <h5>{author}</h5>
                     </div>
                     <div className="button-container mx-2">
-                        <button className="underline font-semibold pb-1" onClick={getNewQuote}>New Quote</button>
+                        <button className="underline font-semibold pb-1" onClick={getNewQuote}>Another Review</button>
                     </div>
                 </div>
             </div>
