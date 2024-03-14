@@ -5,7 +5,7 @@ import MonthlyBox from '../components/Stats/MonthlyBox';
 import YTDBox from '../components/Stats/YTDBox';
 import customFetch from '../utils/customFetch';
 import { useQuery } from '@tanstack/react-query';
-import { FaArrowRight, FaDatabase } from "react-icons/fa";
+import { FaArrowDown, FaDatabase } from "react-icons/fa";
 import StatsContainerMore from '../components/StatsContainerMore';
 
 
@@ -53,9 +53,9 @@ const Stats = () => {
                     </div>
                     <StatsContainer defaultStats={defaultStats} />
                     <div className="mt-4" onClick={handleClick}>
-                        <p className='cursor-pointer flex items-center justify-center font-semibold mb-4'>
+                        <p className='cursor-pointer flex items-center justify-center font-semibold mb-4 hover:scale-110 hover:underline'>
                             Pending & Declined Orders 
-                            <FaArrowRight className='ml-1 mt-0.5' size={14}/>
+                            <FaArrowDown className='ml-1 mt-0.5' size={14}/>
                         </p>
                         {showComponent && <StatsContainerMore />}
                     </div>
@@ -68,9 +68,9 @@ const Stats = () => {
                     </div>
                     <StatsContainer defaultStats={defaultStats} />
                     <div className="mt-4" onClick={handleClickTwo}>
-                        <p className='cursor-pointer flex items-center justify-center font-semibold mb-4'>
+                        <p className='cursor-pointer flex items-center justify-center font-semibold mb-4 hover:scale-110 hover:underline'>
                             Pending & Declined Orders 
-                            <FaArrowRight className='ml-1 mt-0.5' size={14}/>
+                            <FaArrowDown className='ml-1 mt-0.5' size={14}/>
                         </p>
                         {showComponentTwo && <StatsContainerMore />}
                     </div>

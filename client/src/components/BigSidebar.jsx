@@ -12,7 +12,7 @@ import NoPOT from './NoPOT';
 const BigSidebar = () => {
   
   const { showSidebar } = useDashboardContext();
-  const [isVisible, setIsVisible] = useState(true);
+  const [isVisible, setIsVisible] = useState(false);
 
   return (
     <Wrapper>
