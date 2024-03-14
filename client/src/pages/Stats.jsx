@@ -1,6 +1,6 @@
 /* eslint-disable react-refresh/only-export-components */ 
 import { useState } from 'react';
-import { ChartsContainer, OrderTable, SearchFilter, StatsContainer } from '../components';
+import { ChartsContainer, OrderTable, SearchFilter, StatsContainer, StatsLineCharts, StatsLineChartsMonth } from '../components';
 import MonthlyBox from '../components/Stats/MonthlyBox';
 import YTDBox from '../components/Stats/YTDBox';
 import customFetch from '../utils/customFetch';
@@ -42,11 +42,19 @@ const Stats = () => {
         setShowComponentTwo(!showComponentTwo);
     };
 
+    // YTD
+    const [isVisible, setIsVisible] = useState(false);
+
+    // MONTHLY
+    const [isVisibleMonthly, setIsVisibleMontly] = useState(false);
+
     return (
         <>
             <SearchFilter />
+        
             <div className='grid grid-cols-1 lg:grid-cols-2 gap-0 lg:gap-6'>
-                <div className='col-span-1 px-2 lg:px-0'>
+
+                <div className='col-span-1 px-2 lg:px-0 mt-2 lg:mt-6'>
                     <div className="mb-4 mt-4 lg:mt-0 lg:mb-4 flex items-center justify-center">
                         <FaDatabase color="#0a6c74" size={24} className="mr-1" />
                         <h4 className='text-2xl md:text-3xl lg:text-3xl'>YTD Status</h4>
@@ -61,7 +69,7 @@ const Stats = () => {
                     </div>
                 </div>
 
-                <div className='col-span-1 px-2 lg:px-0'>
+                <div className='col-span-1 px-2 lg:px-0 mt-2 lg:mt-6'>
                     <div className="mb-4 mt-10 lg:mt-0 lg:mb-4 flex items-center justify-center">
                         <FaDatabase color="#0a6c74" size={24} className="mr-1" />
                         <h4 className='text-2xl md:text-3xl lg:text-3xl'>Monthly Status</h4>
@@ -77,12 +85,18 @@ const Stats = () => {
                 </div>
             </div>
             
+
             <div className='grid grid-cols-1 lg:grid-cols-2 gap-0 lg:gap-6'>
                 <div className='col-span-1 px-2 lg:px-0'>
-                    <YTDBox />
+                    <div className='' onClick={() => setIsVisible(!isVisible)}>
+                        {isVisible ? <StatsLineCharts /> : <YTDBox />}
+                    </div>
                 </div>
+
                 <div className='col-span-1 px-2 lg:px-0'>
-                    <MonthlyBox />
+                    <div className='' onClick={() => setIsVisibleMontly(!isVisibleMonthly)}>
+                        {isVisibleMonthly ? <StatsLineChartsMonth /> : <MonthlyBox />}
+                    </div>
                 </div>
             </div>
 

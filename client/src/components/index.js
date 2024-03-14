@@ -20,3 +20,8 @@ export { default as YTDBox } from './Stats/YTDBox';
 export { default as MonthlyBox } from './Stats/MonthlyBox';
 export { default as SearchFilter } from './SearchFilter';
 export { default as DashboardPOT } from './DashboardPOT';
+export { default as AreaChart } from './charts/AreaChart';
+export { default as BarChart } from './charts/BarChart';
+export { default as LineChart } from './charts/LineChart';
+export { default as StatsLineCharts } from './charts/StatsLineCharts';
+export { default as StatsLineChartsMonth } from './charts/StatsLineChartsMonth';

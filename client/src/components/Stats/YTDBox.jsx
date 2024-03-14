@@ -3,15 +3,17 @@ import Wrapper from "../../assets/wrappers/ChartsContainer"
 import { BsGraphDownArrow } from "react-icons/bs";
 import { BsGraphUpArrow } from "react-icons/bs";
 import DropDownYear from "./DropDownYear";
+import { FaExchangeAlt } from "react-icons/fa";
 
 const YTDBox = () => {
 
     return (
         <Wrapper>
-            <div className="flex items-center justify-center mb-2">
+            <div className="flex items-center justify-center">
                 <BsClipboardData color="#0a6c74" size={24} className="mr-1 -mt-2.5" />
-                <h4>YTD Performance</h4>
+                <h4 className="text-2xl md:text-3xl lg:text-3xl">YTD Performance</h4>
             </div>
+            <FaExchangeAlt className="mx-auto mb-2 hover:scale-110 text-[#2cb1bc] hover:text-black" size={20} />
 
             <div className="bg-gradient-to-br from-[#54d1db] to-[#2cb1bc] rounded-lg">
 
