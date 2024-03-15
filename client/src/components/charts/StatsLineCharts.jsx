@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react';
 import { BsClipboardData } from 'react-icons/bs';
 import { FaExchangeAlt } from 'react-icons/fa';
-import { CartesianGrid, Legend, Line, LineChart, Tooltip, XAxis, YAxis, } from 'recharts';
+import { CartesianGrid, Legend, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis, } from 'recharts';
 
 const StatsLineCharts = () => {
 
@@ -28,19 +28,18 @@ const StatsLineCharts = () => {
                 <h4 className='mb-4 text-2xl md:text-3xl lg:text-3xl'>YTD comparing from prev year</h4>
             </div>
             <FaExchangeAlt className="mx-auto mb-2 hover:scale-110 text-[#2cb1bc] hover:text-black" size={20} />
-            <div className='grid grid-cols-1 lg:grid-cols-2 gap-0 lg:gap-6'>
-                <div className='col-span-1 px-2 lg:px-0'>
-                    <LineChart data={data} width={560} height={340}>
-                        <XAxis dataKey={'month'} />
-                        <YAxis dataKey={'thisyear'} domain={[0, 50]} type='number' />
-                        <CartesianGrid stroke='grey' strokeDasharray='5 5' />
-                        <Line dataKey={'thisyear'} stroke='purple' strokeLinecap={3} isAnimationActive={true} />
-                        <Line dataKey={'lastyear'} stroke='orange' strokeLinecap={3} isAnimationActive={true} />
-                        <Legend />
-                        <Tooltip content={<CustomTooltip />} />
-                    </LineChart>
-                </div>
-            </div>
+            <ResponsiveContainer width='100%' height={340}>
+                <LineChart data={data} >
+                    <XAxis dataKey={'month'} />
+                    <YAxis dataKey={'thisyear'} domain={[0, 50]} type='number' />
+                    <CartesianGrid stroke='grey' strokeDasharray='5 5' />
+                    <Line dataKey={'thisyear'} stroke='purple' strokeLinecap={3} isAnimationActive={true} />
+                    <Line dataKey={'lastyear'} stroke='orange' strokeLinecap={3} isAnimationActive={true} />
+                    <Legend />
+                    <Tooltip content={<CustomTooltip />} />
+                </LineChart>
+            </ResponsiveContainer>
+
         </div>
     );
 
@@ -54,7 +53,7 @@ const CustomTooltip = ({ active, payload, label }) => {
 
         return (
         <div className="p-4 bg-[#0e7c86] flex flex-col gap-4 rounded-md">
-            <p className="text-medium text-lg text-white">Years ago: {label}</p>
+            <p className="text-medium text-lg text-white">{label} years ago</p>
                 <p className="text-sm text-[#87eaf2]">
                 This year:
                 <span className="mx-1 underline">{payload[0].value}</span><span className='font-bold'>orders</span>
